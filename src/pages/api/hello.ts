@@ -3,6 +3,8 @@
 // em um backend
 import { NextApiRequest, NextApiResponse } from 'next';
 
-export default (req: NextApiRequest, res: NextApiResponse ) => {
-  res.status(200).json({ name: 'RODRIGO' });
+export default async (req: NextApiRequest, res: NextApiResponse ) => {
+  await res.unstable_revalidate('/');
+
+  return res.status(200).json({ name: 'RODRIGO' });
 };

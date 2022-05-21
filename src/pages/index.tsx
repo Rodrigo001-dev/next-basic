@@ -26,6 +26,6 @@ export const getStaticProps: GetStaticProps = async () => {
       data: response.data,
       date: new Date().toISOString(),
     },
-    revalidate: 5, // 5 seconds
+    revalidate: 60 * 60 * 4, //  4 hours
   };
 };
