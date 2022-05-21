@@ -9,7 +9,7 @@
  ## 🚀 Tecnologias/Bibliotecas utilizadas
  
  <a href="https://www.typescriptlang.org/" target="_blank"> <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white" alt="TypeScript"> </a>
-<a href="https://nextjs.org/" target="_blank"> <img src="https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next&logoColor=white" alt="Next"> </a>
+<a href="https://nextjs.org/" target="_blank"> <img src="https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=vercel&logoColor=white" alt="Next"> </a>
  
  ## 💻 Autor
 
