@@ -1,11 +1,6 @@
 import axios from 'axios';
-import { useQuery } from 'react-query';
 
-import { GetServerSideProps } from 'next';
-
-type Repository = {
-  name: string
-};
+import { GetStaticProps } from 'next';
 
 export default function Home({ data, date }) {
 
@@ -23,13 +18,14 @@ export default function Home({ data, date }) {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const response = await axios.get('https://api.github.com/users/Rodrigo001-de/repos')
 
   return {
     props: {
       data: response.data,
       date: new Date().toISOString(),
-    }
+    },
+    revalidate: 5, // 5 seconds
   };
 };
